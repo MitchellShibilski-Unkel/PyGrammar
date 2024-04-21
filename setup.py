@@ -5,5 +5,5 @@ setup(
     name="PyGrammar",
     version="1.0",
     author="Mitchell Shibilski-Unkel",
-    py_modules=['PyGrammar']
+    py_modules=['src.PyGrammar']
 )
