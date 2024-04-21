@@ -91,9 +91,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     author=AUTHOR,
-    author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
-    url=URL,
     py_modules=['PyGrammar'],
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
