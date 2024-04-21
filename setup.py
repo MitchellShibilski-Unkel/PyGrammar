@@ -92,7 +92,7 @@ setup(
     long_description_content_type='text/markdown',
     author=AUTHOR,
     python_requires=REQUIRES_PYTHON,
-    py_modules=['PyGrammar'],
+    packages=['PyGrammar'],
     # If your package is a single module, use this instead of 'packages':
     # py_modules=['mypackage'],
 
