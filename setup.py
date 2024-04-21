@@ -6,5 +6,4 @@ setup(
     version="1.0",
     author="Mitchell Shibilski-Unkel",
     py_modules=['PyGrammar'],
-    package_dir={'', 'src'},
 )
