@@ -25,15 +25,13 @@ class PyGrammar:
             words = str(s).split(" ")
             for _, t in enumerate(words):
                 try:
-                    nextValue = s[_+1]
-                    if t == nextValue:
-                        correctedText += t + " "
-                        s.remove(nextValue), getPOS.remove(getPOS[_+1])
-                    elif str(t).islower() and getPOS[_] == "NNP" or getPOS[_] == "NNPS":
+                    if str(t).islower() and getPOS[_] == "NNP" or getPOS[_] == "NNPS":
                         correctedText += str(t).capitalize() + " "
                     else:
                         correctedText += t + " "
                 except Exception:
                     correctedText += t + "."
+                    
+            correctedText = str(re.sub(r'\b(\w+)\s+\1\b', r'\1', correctedText))
             
-        return self.lang.correct(correctedText.replace(" .", "."))
+        return self.lang.correct(correctedText.replace(" .", ".").replace("\'", ""))
