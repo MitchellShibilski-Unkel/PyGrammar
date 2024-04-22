@@ -7,5 +7,4 @@ v1.0
 - Grammar Correction
 
 ## Installation
-`pip install PyGrammar` <br />
 `pip install git+https://github.com/MitchellShibilski-Unkel/PyGrammar.git@main` 
