@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/MitchellShibilski-Unkel/PyGrammar",
-    packages=find_packages(where="src"),  
+    py_modules=find_packages("PyGrammar"),  
     package_dir={"": "src"},
     classifiers=[
         "Programming Language :: Python :: 3",
