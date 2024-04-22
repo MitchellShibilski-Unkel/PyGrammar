@@ -1,6 +1,6 @@
 # PyGrammar
 **Python Grammar Bot** <br />
-v1.0
+v1.1
 
 ## Features
 - Part of Speech Detection
