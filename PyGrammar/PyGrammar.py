@@ -1,4 +1,6 @@
 import nltk 
+import re
+import random
 import language_tool_python as lang
 
 
@@ -16,6 +18,7 @@ class PyGrammar:
         return POS
     
     def correct(self):
+        self.lang.enable_spellchecking()
         getPOS = self.getPartsOfSpeech()
         
         sentences: list = self.text.split(".")
@@ -34,4 +37,6 @@ class PyGrammar:
                     
             correctedText = str(re.sub(r'\b(\w+)\s+\1\b', r'\1', correctedText))
             
-        return self.lang.correct(correctedText.replace(" .", ".").replace("\'", ""))
+        correctedText.replace(" .", ".").replace("\'", "")
+            
+        return self.lang.correct(correctedText)
