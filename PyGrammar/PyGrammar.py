@@ -8,8 +8,29 @@ class PyGrammar:
     def __init__(self, text: str):
         self.text = text
         self.lang = lang.LanguageToolPublicAPI('en-US')
-        nltk.download('punkt'), nltk.download('averaged_perceptron_tagger'), nltk.download('maxent_ne_chunker'), nltk.download('words')
 
+        if nltk.data.find('tokenizers/punkt') is None:
+            nltk.download('punkt')
+        else:
+            pass
+
+        # Check if 'averaged_perceptron_tagger' is downloaded
+        if nltk.data.find('taggers/averaged_perceptron_tagger') is None:
+            nltk.download('averaged_perceptron_tagger')
+        else:
+            pass
+
+        if nltk.data.find('taggers/maxent_ne_chunker') is None:
+            nltk.download('maxent_ne_chunker')
+        else:
+            pass
+
+        # Check if 'words' is downloaded
+        if nltk.data.find('corpora/words') is None:
+            nltk.download('words')
+        else:
+            pass
+    
     def getPartsOfSpeech(self):
         POS = []
         for t in self.text:
