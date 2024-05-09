@@ -8,4 +8,5 @@ v1.2
 - Spell Correction
 
 ## Installation
-`pip install git+https://github.com/MitchellShibilski-Unkel/PyGrammar.git@main` 
+`pip install git+https://github.com/MitchellShibilski-Unkel/PyGrammar.git@main` <br />
+`from src.PyGrammar import PyGrammar`
