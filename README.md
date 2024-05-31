@@ -9,4 +9,4 @@ v1.2
 
 ## Installation
 `pip install git+https://github.com/MitchellShibilski-Unkel/PyGrammar.git@main` <br />
-`from src.PyGrammar import PyGrammar`
+`from PyGrammar.PyGrammar import PyGrammar`
