@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="pygrammar",
-    version="1.0",
+    version="1.2",
     author="Mitchell Shibilski-Unkel",
     author_email="",
     description="PyGrammar",
