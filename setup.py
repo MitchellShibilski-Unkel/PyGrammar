@@ -1,33 +1,20 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+import setuptools
 
-here = os.path.abspath(os.path.dirname(__file__))
-
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
-
-VERSION = 'v1.0'
-DESCRIPTION = 'Python Grammar Bot'
-LONG_DESCRIPTION = '-'
-
-# Setting up
-setup(
-    name="PyGrammar",
-    version=VERSION,
+setuptools.setup(
+    name="pygrammar",
+    version="1.0",
     author="Mitchell Shibilski-Unkel",
-    author_email="None",
-    description=DESCRIPTION,
-    long_description_content_type="text/markdown",
-    long_description=long_description,
-    packages=find_packages(),
-    install_requires=['nltk', 'language_tool_python'],
-    keywords=['python', 'grammar', 'grammarbot'],
+    author_email="",
+    description="PyGrammar",
+    long_description="Grammar Correction Library",
+    url="https://github.com/MitchellShibilski-Unkel/PyGrammar.git",
+    packages=setuptools.find_packages(),
+    #install_requires=['transformers', 'sentencepiece==0.1.95', 'python-Levenshtein==0.12.2', 'fuzzywuzzy==0.18.0',  'tokenizers==0.10.2', 'fsspec==2021.5.0', 'lm-scorer==0.4.2', 'errant'],
+    install_requires=['transformers', 'sentencepiece', 'python-Levenshtein', 'fuzzywuzzy',  'tokenizers', 'fsspec', 'errant', 'torch'],
     classifiers=[
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+        "Programming Language :: Python :: 3.10",
+        "License :: MIT",
+        "Operating System :: OS Independent",
+    ],
 )
+
